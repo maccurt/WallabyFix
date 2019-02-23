@@ -1,0 +1,45 @@
+<!-- <br>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+
+      <div>
+        <button id='add-category' class='btn btn-primary btn-sm' (click)='addCategory()'><i class="fa fa-plus"></i> Add
+          New Category</button>
+      </div>
+      <br>
+
+      <table id='category-list-component' class='list-table table-striped table-sm'>
+        <thead>
+          <tr>
+            <th></th>
+            <th class='name'>Name</th>
+            <th>Budgets</th>
+            <th>Items</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="id_{{c.id}}" *ngFor="let c of categoryList">
+            <td class='item-actions'>
+              <div class='actions-container'>
+
+                <a *ngIf="c.budgetItemCount===0" class='delete-category' title='delete' (click)="deleteCategory(c)">
+                  <i class="fa fa-trash"></i>
+                </a>
+                <a *ngIf="c.budgetItemCount > 0" class='delete-category' title='delete' title="can not delete a category with">
+                  <i class="no-action-icon fa fa-trash-o"></i>
+                </a>
+              </div>
+            </td>
+            <td class="name"> <a (click)="editCategory(c)">{{c.name}}</a> </td>
+            <td class="budget-count"> {{c.budgetCount}} </td>
+            <td class="budget-item-count" > {{c.budgetItemCount}} </td>
+          </tr>
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </div>
+</div> -->
